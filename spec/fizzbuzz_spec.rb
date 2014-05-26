@@ -1,5 +1,21 @@
 require 'fizzbuzz'
 
+describe 'Fizzbuzz' do
+
+	context "know sthat a number is divisible by"
+
+		it '3' do
+			expect(is_divisible_by_three?(3)).to be_true
+
+
+		end
+
+
+
+
+
+end
+
 
 # =======================================
 # below was my first attempy, now i'll try my second attempt, but on the same file on a second branch on the repo 'fizzbuzz', branch name 'fzbbr2'
