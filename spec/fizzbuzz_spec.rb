@@ -2,15 +2,34 @@ require 'fizzbuzz'
 
 describe 'Fizzbuzz' do
 
-	context "know sthat a number is divisible by"
+	context "knows that a number is divisible by"
 
 		it '3' do
 			expect(is_divisible_by_three?(3)).to be_true
+		end
 
+		it '5' do
+			expect(is_divisible_by_five?(5)).to be_true
+		end
 
+		it '15' do
+			expect(is_divisible_by_fifteen?(15)).to be_true
 		end
 
 
+	context "knows that a number is not divisible by"
+		
+		it '3' do
+			expect(is_divisible_by_three?(1)).not_to be_true
+		end
+
+		it '5' do
+			expect(is_divisible_by_five?(2)).not_to be_true
+		end
+
+		it '15' do
+			expect(is_divisible_by_fifteen?(4)).not_to be_true
+		end
 
 
 
